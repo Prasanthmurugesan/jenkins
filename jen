@@ -1,4 +1,9 @@
-           steps {
+pipeline {
+    agent any
+
+    stages {
+        stage('pipeline test') {
+            steps {
                 script{
                 sh "echo hostnamectl"
                 sh "echo This is Pipeline Job"
